@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <SeekBar
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="100dp"
+        android:id="@+id/musicBar"
+        android:thumbTint="#ff5500"
+        android:progressTint="#ff6600"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:text="00:00"
+            android:id="@+id/startTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/endTimeText"
+            android:textSize="15sp"
+            android:text="00:00"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/startButton"
+            android:onClick="play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Start"/>
+        <Button
+            android:id="@+id/pauseButton"
+            android:onClick="pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Pauza"/>
+        <Button
+            android:id="@+id/stopButton"
+            android:onClick="stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Stop"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/startRecordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Rozpocznij Nagrywanie"/>
+        <Button
+            android:id="@+id/stopRecordButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Koniec nagrywania"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/deathGripsButton"
+            android:onClick="play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Wybierz dodane nagranie"/>
+        <Button
+            android:id="@+id/recordedSoundButton"
+            android:onClick="play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Wybierz nagrany plik"/>
+        <TextView
+            android:id="@+id/musicNameText"
+            android:layout_gravity="center"
+            android:textSize="15sp"
+            android:layout_margin="10dp"
+            android:text="Wybrano: Death Grips - Guillotine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
